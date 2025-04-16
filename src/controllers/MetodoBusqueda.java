@@ -38,19 +38,21 @@ public class MetodoBusqueda {
     }
 
     public void showPersonByCode() {
-        boolean rep=true;
-        while (rep==true) {
+        boolean rep = true;
+        while (rep == true) {
             int codeToFind = showConsole.getCode();
             int indexPerson = findPersonByCode(codeToFind);
             if (indexPerson >= 0) {
                 showConsole.showMessage("Persona encontrada");
                 showConsole.showMessage(people[indexPerson].toString());
-                rep=false;
+                rep = false;
                 break;
             } else {
                 showConsole.showMessage("Persona con codigo " + codeToFind + " no encontrado");
             }
         }
     }
+    
+
 
 }

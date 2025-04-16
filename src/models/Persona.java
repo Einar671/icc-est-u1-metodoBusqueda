@@ -1,4 +1,5 @@
 package models;
+
 public class Persona {
     private int code;
     private String name;
@@ -28,8 +29,5 @@ public class Persona {
     public String toString() {
         return "Persona [code=" + code + ", name=" + name + "]";
     }
-    
-    
 
-    
 }
