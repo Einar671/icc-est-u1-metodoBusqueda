@@ -70,7 +70,7 @@ public class MetodoBusquedaBinaria {
             if (persona[central].getName().equalsIgnoreCase(name)) {
                 return central;
             }
-            if (persona[central].getName().compareToIgnoreCase(name)>0 ) {
+            if (persona[central].getName().compareToIgnoreCase(name)<0 ) {
                 bajo = central + 1;
             } else {
                 alto = central - 1;
